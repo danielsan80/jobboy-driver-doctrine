@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbf3e3e1acd1069fe7dd4f0b5dc81591",
+    "content-hash": "70e87a1ce7a4b5c63433e94844b03744",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -75,16 +75,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.3.21",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "53022fdb10a25cafd493b2d14a344309b0496340"
+                "reference": "3077283b014ee9ef7bad1a8e815af99a1999e315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/53022fdb10a25cafd493b2d14a344309b0496340",
-                "reference": "53022fdb10a25cafd493b2d14a344309b0496340",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/3077283b014ee9ef7bad1a8e815af99a1999e315",
+                "reference": "3077283b014ee9ef7bad1a8e815af99a1999e315",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,8 @@
             "extra": {
                 "branch-alias": {
                     "dev-0.2": "0.2.x-dev",
-                    "dev-master": "0.3.x-dev"
+                    "dev-0.3": "0.3.x-dev",
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -126,9 +127,9 @@
             "description": "It's a little jobman... a little job manager",
             "support": {
                 "issues": "https://github.com/danielsan80/jobboy/issues",
-                "source": "https://github.com/danielsan80/jobboy/tree/0.3.21"
+                "source": "https://github.com/danielsan80/jobboy/tree/0.4.1"
             },
-            "time": "2022-01-24T13:43:32+00:00"
+            "time": "2022-04-27T16:06:37+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3079,16 +3080,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.40",
+            "version": "v4.4.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "bdcc66f3140421038f495e5b50e3ca6ffa14c773"
+                "reference": "0e1e62083b20ccb39c2431293de060f756af905c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/bdcc66f3140421038f495e5b50e3ca6ffa14c773",
-                "reference": "bdcc66f3140421038f495e5b50e3ca6ffa14c773",
+                "url": "https://api.github.com/repos/symfony/console/zipball/0e1e62083b20ccb39c2431293de060f756af905c",
+                "reference": "0e1e62083b20ccb39c2431293de060f756af905c",
                 "shasum": ""
             },
             "require": {
@@ -3149,7 +3150,7 @@
             "description": "Eases the creation of beautiful and testable command line interfaces",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/console/tree/v4.4.40"
+                "source": "https://github.com/symfony/console/tree/v4.4.41"
             },
             "funding": [
                 {
@@ -3165,7 +3166,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-26T22:12:04+00:00"
+            "time": "2022-04-12T15:19:55+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -3435,16 +3436,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v6.0.7",
+            "version": "v6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "924f44f1c682473453a502f8f01d4904a7761dcc"
+                "reference": "4959a1eedd473bdb3f19db5b1525d5415dfab471"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/924f44f1c682473453a502f8f01d4904a7761dcc",
-                "reference": "924f44f1c682473453a502f8f01d4904a7761dcc",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/4959a1eedd473bdb3f19db5b1525d5415dfab471",
+                "reference": "4959a1eedd473bdb3f19db5b1525d5415dfab471",
                 "shasum": ""
             },
             "require": {
@@ -3498,7 +3499,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v6.0.7"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v6.0.8"
             },
             "funding": [
                 {
@@ -3514,7 +3515,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-06T11:27:28+00:00"
+            "time": "2022-04-12T16:11:42+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
