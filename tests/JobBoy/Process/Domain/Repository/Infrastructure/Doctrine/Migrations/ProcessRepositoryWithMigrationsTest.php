@@ -41,6 +41,7 @@ class ProcessRepositoryWithMigrationsTest extends ProcessRepositoryInterfaceTest
         $migrationDirectory = dirname($ref->getFileName());
         $migrationConfig->setMigrationsDirectory($migrationDirectory);
         $migrationConfig->setMigrationsNamespace($ref->getNamespaceName());
+        $migrationConfig->registerMigrationsFromDirectory($migrationDirectory);
 
         $migration = new Migration($migrationConfig);
         $migration->migrate();

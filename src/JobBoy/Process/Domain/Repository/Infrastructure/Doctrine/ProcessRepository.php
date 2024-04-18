@@ -212,7 +212,7 @@ class ProcessRepository implements ProcessRepositoryInterface
     protected function _update(TouchCallbackProcess $process): void
     {
 
-        $this->connection->executeUpdate('
+        $this->connection->executeStatement('
             UPDATE ' . $this->tableName . ' SET
               status = ?,
               updated_at = ?,
@@ -247,7 +247,7 @@ class ProcessRepository implements ProcessRepositoryInterface
                 $id
             ]);
 
-        $data = $statement->fetch();
+        $data = $statement->fetchAssociative();
         if (!$data) {
             return null;
         }
@@ -286,7 +286,7 @@ class ProcessRepository implements ProcessRepositoryInterface
 
     protected function _delete(TouchCallbackProcess $process): void
     {
-        $this->connection->executeUpdate('
+        $this->connection->executeStatement('
             DELETE FROM ' . $this->tableName . ' 
             WHERE id = ?',
             [
@@ -307,7 +307,7 @@ class ProcessRepository implements ProcessRepositoryInterface
 
         $statement = $qb->execute();
 
-        $records = $statement->fetchAll();
+        $records = $statement->fetchAllAssociative();
         $processes = [];
         foreach ($records as $record) {
             $process = $this->_hydrateProcess($record);

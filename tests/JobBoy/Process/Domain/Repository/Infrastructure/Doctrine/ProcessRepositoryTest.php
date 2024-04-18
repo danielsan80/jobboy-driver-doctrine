@@ -40,7 +40,6 @@ class ProcessRepositoryTest extends ProcessRepositoryInterfaceTest
         $table = $processRepository->configureSchema($schema);
         $schemaManager->createTable($table);
 
-
         return new ProcessRepository($processFactory, $connection);
     }
 

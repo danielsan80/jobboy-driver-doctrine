@@ -2,8 +2,9 @@
 
 namespace JobBoy\Process\Domain\Entity\Infrastructure\Doctrine\Migrations;
 
+use Doctrine\DBAL\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
-use Doctrine\Migrations\AbstractMigration;
+
 
 class Version20200101000000_create_process_table extends AbstractMigration
 {
@@ -21,5 +22,10 @@ class Version20200101000000_create_process_table extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
         $this->addSql('DROP TABLE __process');
+    }
+
+    public function isTransactional()
+    {
+        return false;
     }
 }
